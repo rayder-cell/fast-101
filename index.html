@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio </title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- El contenido va aquí -->
+    <nav id="baner"> <!-- nav viene de navegacion -->
+        <div class="nav-brand">Rayder</div> 
+        <!-- agregar un botón a la página -->
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <!-- ul - Unordered list -->
+        <!-- ol - Ordered list -->
+        <!-- lista desordenada -->
+        <ul class="nav-links">
+            <!-- li - List item -->
+            <li><a href="#about">About</a></li>
+            <!-- a - anchor -->
+            <li><a href="#skills">Skills</a></li> 
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <!-- img - imagen -->
+        <img src="foto.jpg" alt="Foto" class="hero-img">
+        <!-- h1 (h) Heading -->
+        <!-- h1 ... h6. h1 - h3 -->
+        <h1>Tu Nombre</h1>
+        <!-- p - paragraph -->
+        <p class="hero-subtitle">Estudiante de Desarrollo Web</p>
+        <a href="#contact" class="btn">Contáctame</a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <!-- h2 - subtitulo -->
+        <h2>Sobre Mí</h2>
+        <!-- parrafos -->
+        <p>
+            Soy estudiante de desarrollo web en Enter Tech School.
+            Me apasiona crear soluciones tecnológicas que impacten
+            positivamente en las personas.
+        </p>
+        <p>
+            Actualmente estoy aprendiendo HTML, CSS y JavaScript
+            para construir aplicaciones web modernas.
+        </p>
+        <!-- lista desordenada -->
+        <ul class="about-interests">
+            <!-- list iteam -->
+            <li>🎯 Desarrollo web frontend</li>
+            <li>🎨 Diseño de interfaces</li>
+            <li>🤖 Inteligencia artificial</li>
+            <li>📱 Aplicaciones móviles</li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <!-- id: SOLO PUEDE EXISTIR UNO -->
+        <!-- class: Puede haber más de uno -->
+        <h2>Mis Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3 id="def">HTML</h3>
+                <p>Estructura y semántica web</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Estilos y diseño responsive</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Interactividad y lógica</p>
+            </div>
+            <div class="skill-card">
+                <h3>Git</h3>
+                <p>Control de versiones</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-container">
+            <article class="project-card">
+                <h3>Mi Portfolio Dev</h3>
+                <p>Sitio web personal construido con HTML, CSS y JavaScript.</p>
+                <a href="#" class="btn">Ver Proyecto</a>
+            </article>
+            <article class="project-card">
+                <h3>Calculadora JS</h3>
+                <p>Calculadora interactiva con operaciones básicas.</p>
+                <a href="#" class="btn">Ver Proyecto</a>
+            </article>
+            <article class="project-card">
+                <h3>Landing Page</h3>
+                <p>Página de aterrizaje responsive para un producto.</p>
+                <a href="#" class="btn">Ver Proyecto</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form" class="rojo azul verde">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+            <p id="form-feedback" class="form-feedback"></p>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rayder Muñoz</h3>
+                <p>Desarrollador Web en formación</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <h3>images</h3>
+                <ul>
+                    <li><a href="https://github.com/TU-USUARIO" target="_blank"><b>GitHub</b></a></li>
+                    <li><a href="https://linkedin.com/in/TU-USUARIO" target="_blank"><b>Linkedin</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; <b> 2026 rayder. Todos los derechos reservados.</b></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

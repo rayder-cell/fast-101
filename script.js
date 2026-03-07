@@ -94,7 +94,7 @@ navToggle.addEventListener('click', toggleMenu);
 const navItems = document.querySelectorAll('.nav-links a');
 
 //
-navItems = [About, Skills, Projects, Contacto]
+
 
 navItems.forEach(function (enlace) {
     enlace.addEventListener('click', function () {

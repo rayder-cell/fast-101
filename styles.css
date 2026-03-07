@@ -1,6 +1,6 @@
 :root {
     --color-primary: #FF8C00;
-    --color-primary-dark: #1d4ed8;
+    --color-primary-dark: #9ba8b9;
     --color-bg: #f8fafc;
     --color-text: #FF8C00;
     --color-text-light: #64748b;
@@ -103,7 +103,8 @@ nav {
 #hero {
     text-align: center;
     padding: 4rem 1rem;
-    background-color: #ffffff;
+    background-image: url('hero-bg.png');
+    border-radius: 5%;
 }
 
 .hero-img {
